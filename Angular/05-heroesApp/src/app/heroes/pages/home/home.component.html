@@ -48,8 +48,11 @@
       <mat-icon>menu</mat-icon>
     </button>
     <span class="spacer"></span>
-    <button 
+    <span>{{ auth.usuario }}</span>
+    <div style="padding: 0px 5px;"></div>
+    <button
       mat-icon-button
+      (click)="logout()"
     >
       Logout
     </button>
