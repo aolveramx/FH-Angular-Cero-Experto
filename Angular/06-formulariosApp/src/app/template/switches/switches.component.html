@@ -1,7 +1,7 @@
-<h2>Switches</h2>
+<h2>Template: Switches</h2>
 <hr>
 
-<form #miFomrulario="ngForm">
+<form #miFormulario="ngForm">
   <!-- Radio -->
   <div class="row mb-3">
     <label class="col-sm-3 col-form-label">Género</label>
@@ -73,7 +73,7 @@
         <button
         class="btn btn-primary float-end"
         type="button"
-        [disabled]="miFomrulario.invalid">
+        [disabled]="miFormulario.invalid">
         Guardar
       </button>
     </div>
@@ -81,15 +81,15 @@
 </form>
 
 <h5>Valor del formulario</h5>
-<pre>{{ miFomrulario.value| json }}</pre>
+<pre>{{ miFormulario.value| json }}</pre>
 <br>
 <h5>Persona</h5>
 <pre>{{ persona | json }}</pre>
 <br>
 <h5>Valid</h5>
-<pre>{{ miFomrulario.valid }}</pre>
+<pre>{{ miFormulario.valid }}</pre>
 <br>
 <h5>Términos</h5>
-<pre>{{ miFomrulario.form.controls['terminos'].errors | json }}</pre>
+<pre>{{ miFormulario.form.controls['terminos'].errors | json }}</pre>
 <br>
 <pre>Condiciones<: /pre>
